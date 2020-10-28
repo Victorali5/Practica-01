@@ -1,0 +1,4 @@
+La proteína spike o espícula del coronavirus SARS-COV-02 es fundamental para que infecte las células de su hospedero. Está constituida por tres segmentos: un ectodominio, un anclaje transmembranal y una cola corta intracelular. 
+El ectodomino es la región más importante para llevar a cabo la infección de otras células, ya que es ahí en donde 
+se une a los receptores de las células del hospedero. Este primer proceso de infección es crítico dentro del ciclo de
+infección.

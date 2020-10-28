@@ -1,0 +1,73 @@
+ #Comandos de la Práctica 01 
+ ###Víctor Alí Mancilla Gaytán 
+ 
+ #Parte I 
+
+ Respuesta 1: Bash. Usé este comando: ps -p$$
+ 
+ Respuesta 2: Utilicé comando 'mkdir' Ej. mkdir raw_data
+ 
+ Respuesta 3: Utilicé el comando 'mv' Ej. mv filtered/ data/
+mv raw-data/ data/
+
+Respuesta 4: El nombre y la organización de los archivos que acabamos de creear se debe a que,
+para trabajar con datos en bioinformática, separar los archivos dependiendo de si son datos crudos (data/raw-data), 
+datos procesados(data/filtered) nos va a permitir darle un mejor seguimiento a la informacion con la que estamos trabajando. 
+Tener carpetas en las que separemos los códigos que utilizamos para poder obtener figuras específicas que representen nuestra
+información (como gráficas, dendrogramas, etc) nos permite tener una idea de como elaborar alguna figura similar con otros datos
+(figures/)
+
+#Parte II
+
+1- Para conocer los permisos del archivo delay.sh utilicé el comando "ls -l"
+2- Cambié los permisos del archivo delay.sh con el comando "chmod"
+3- Para dormir el proceso 30 segundos, utilicé el comando "sleep 30"
+4- Para canelar el proceso de 300 segundos, utilicé "ctrl c"
+
+#Parte III
+
+#Parte IV
+
+1- Para crear las ligas simbolicas, utilicé el comando "ln ~" y la ubicación del archivo que quería.
+2- Para crear el archvo glycoproteins.faa utilicé "touch glycoproteins.faa"
+3- Para obtener la primera línea de los tres archivos splike_*.faa utilicé el comando "head -1":
+>pdb|6VXX|C Chain C, SARS-CoV-2 spike glycoprotein
+>pdb|6VXX|B Chain B, SARS-CoV-2 spike glycoprotein
+>pdb|6VXX|A Chain A, SARS-CoV-2 spike glycoprotein  
+4- Para redireccionar los archivos splike_*.faa a glycoproteins.faa utilicé ">>"
+   more spike_c.faa >> spike_b.faa >> spike_a.faa >> glycoproteins.faa
+5- Para mover los archivos spilike_*.faa utilicé "rm". Ya no aparecen los archivos desde el directorio raw_data, sólo están en archive y data/filtered.
+6- Para observar solo las 3 primeras líneas de los archivos, usé el comando "head -3" :
+Para sarscov2_assembly.fasta
+
+a>NODE_1_length_264_cov_161.042781
+CACAAATCTTAACACTCTTCCCTACACGACGCTCTTCCGATCTACGCCGGGCCATTCGTA
+CGAACCGATACCTGTGGTAAAGGGTCCTACTGTATGGTGGTACACGAGTAGTAGCAAATG
+
+Para  sarscov02_genoma.fasta
+>NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome
+ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA
+CGAACTTTAAAATCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAAC
+
+La diferencia en el número de lecturas entre ambos archivos puede ser debido a que sarscov02_genoma.fasta contiene el genoma completo del virus, mientras que en
+ sarscov2_assembly.fasta se encuentran los ensambles de ese genoma, es decir, fragmentos más pequeños.
+
+7- Para contar el número de > de los archivos es de 36. Utilicé el comando grep '>' sarscov2_assembly.fasta | wc -l
+
+8- Para contar el número de secuencias que hay en el archivo SRR10971381_R2.fastq utilicé el caracter '@' que encabeza cada secuencia y lo busqué con el comando
+ 'egrep '@'  SRR10971381_R2.fastq | wc -l'. En el archivo hay 130022 secuencias.
+
+9- .fastqc es un formato en el que podemos encontrar secuencias procesadas bajo un control de calidad de la información que contienen. .faa es un formato en el que
+encontraremos secuencias de aminoácidos (fasta amino acids). .fasta es un archivo fasta genérico, en el que podemos encontrar cualquier secuencia de nucleótidos o 
+aminoácidos.
+Las secuencias, en este caso, hacen referencia a nucleótidos 
+Las líneas de cada encabezado o header significan: la primera linea son los nucleótidos (ACTG) de la secuencia de DNA y la segunda representa el valor o nivel de calidad 
+de cada nucleótido en la secuencia, representado por diferentes caracteres.  
+
+10- El comando ls -S enlistó y ordenó la ifnromación por tamaño en filas.
+
+11- Para separar el tercer campo del archivo sarscov02_genoma.gff3, utilicé el comando 'cut -f3 sarscov02_genoma.gff3' y para contar los genes, utilicé egrep
+'gene' sarscov02_genoma.gff3 | wc -l y resultó en 28 genes.
+
+El campo 3 del archivo sarscov02_genoma.gff3 corresponde a la información integral de los genes del virus, incluyeAndo tanto sus genes, como sus regiones codificantes
+y las proteínas a las que codifican esas regiones. CDS es la región codificante del gen y gene es el gen completo.

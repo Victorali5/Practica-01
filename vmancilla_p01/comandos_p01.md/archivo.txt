@@ -1,0 +1,20 @@
+ #Comandos de la Práctica 01 
+ ###Víctor Alí Mancilla Gaytán 
+ 
+ #Parte I 
+
+ Respuesta 1: Bash. Usé este comando: ps -p$$
+ 
+ Respuesta 2: Utilicé comando 'mkdir' Ej. mkdir raw_data
+ 
+ Respuesta 3: Utilicé el comando 'mv' Ej. mv filtered/ data/
+mv raw-data/ data/
+
+Respuesta 4: El nombre y la organización de los archivos que acabamos de creear se debe a que,
+para trabajar con datos en bioinformática, separar los archivos dependiendo de si son datos crudos (data/raw-data), 
+datos procesados(data/filtered) nos va a permitir darle un mejor seguimiento a la informacion con la que estamos trabajando. 
+Tener carpetas en las que separemos los códigos que utilizamos para poder obtener figuras específicas que representen nuestra
+información (como gráficas, dendrogramas, etc) nos permite tener una idea de como elaborar alguna figura similar con otros datos
+(figures/) 
+ 
+ 

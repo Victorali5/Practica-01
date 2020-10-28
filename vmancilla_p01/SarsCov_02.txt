@@ -1,0 +1,10 @@
+El coronavirus SARS-COV-02 pertenece a la familia Coronaviridae, subfamilia beta coronavirus.
+Se ha observado que el SARS-COV-02 está relacionado a virus de murciélagos. 
+Al comparar los diferentes genomas secuenciados del coronavirus, destaca que este virus
+sigue mutando, ya que hay diferencias en los genomas secuenciados en diferentes países.
+
+Es un virus de RNA de cadena sencilla, enrollado dentro de una nucleocápside formada 
+por glicoproteína de membrana y una proteína de envoltura, en la que se encuentran
+las proteínas spike. Esta proteína se une a receptores ACEII de los humanos. 
+La relevancia de conocer esta estructura es que se puede intentar diseñar una
+forma de bloquear esta unión entre el virus y su receptor.

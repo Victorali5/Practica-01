@@ -1,0 +1,5 @@
+La proteína spike o espícula del coronavirus es una estructura fundamental para su proceso de infección, ya que
+esta proteína se une a receptores ACEII de las células hospederas. Cuenta con dos sub unidades (S1 y S2) y son los
+dominios de S1 los que reconocen los receptores de las células hospederas. La proteína spike existe en dos conformaciones
+distintas: la que está formada por un trímero  que contiene receptores y ancladores S1 y la que está formada por un 
+tallo trimerico transmembranal S2.
